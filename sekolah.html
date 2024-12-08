@@ -3,258 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Website resmi Sekolah XYZ. Informasi tentang profil, akademik, galeri, dan kontak sekolah.">
+    <meta name="description" content="Website resmi Sekolah Kelompok 2. Informasi tentang profil, akademik, galeri, dan kontak sekolah.">
     <meta name="author" content="Kelompok 2">
-    <title>Sekolah XYZ - Beranda</title>
+    <title>Sekolah Kelompok 2 - Beranda</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
 </head>
-    <style>
-
-        body {
-            font-family: 'Roboto', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-    
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-    
-        header {
-            background: url('https://wallpapers.com/images/featured/spongebob-aesthetic-desktop-660cfrc9uothqqq4.webp') no-repeat center center/cover;
-            height: 70vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-        }
-    
-    
-        header h1 {
-            font-size: 3rem;
-            z-index: 1;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-        }
-    
-        header p {
-            font-size: 1.5rem;
-            margin: 10px 0;
-            z-index: 1;
-        }
-    
-        header .btn {
-            display: inline-block;
-            padding: 12px 30px;
-            background: #0078ff;
-            color: #fff;
-            border-radius: 30px;
-            margin-top: 10px;
-            font-size: 1rem;
-            font-weight: bold;
-            z-index: 1;
-            transition: all 0.3s;
-        }
-    
-        header .btn:hover {
-            background: #0056c3;
-        }
-    
-        nav {
-            background: #0078ff;
-            color: white;
-            padding: 15px 0;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
-    
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            margin: 0;
-            padding: 0;
-        }
-    
-        nav ul li {
-            margin: 0 15px;
-        }
-    
-        nav ul li a {
-            color: white;
-            font-size: 1.1rem;
-            font-weight: 500;
-        }
-    
-        nav ul li a:hover {
-            color: #ffd700;
-        }
-    
-        main {
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-    
-        h2 {
-            font-size: 2rem;
-            border-bottom: 2px solid #0078ff;
-            padding-bottom: 5px;
-            margin-bottom: 20px;
-        }
-    
-        .card {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-            margin-bottom: 20px;
-        }
-    
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-    
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-        }
-        
-        .gallery-item {
-            text-align: center;
-        }
-
-    
-        .gallery img {
-            width: 100%;
-            border-radius: 8px;
-            transition: transform 0.3s ease;
-        }
-
-    
-        .gallery img:hover {
-            transform: scale(1.1);
-        }
-
-        footer {
-            background: #0056c3;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-        
-        figcaption {
-            margin-top: 10px;
-            font-weight: bold;
-            color: #0078ff;
-        }
-        
-        footer p {
-            margin: 0;
-            font-size: 0.9rem;
-        }
-    
-        .form-container {
-            background: white;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 500px;
-        }
-    
-        .form-group label {
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-    
-        input, textarea {
-            width: calc(100% - 20px);
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-    
-        button.btn {
-            background: #0078ff;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-    
-        button.btn:hover {
-            background: #0056c3;
-        }
-    
-        @media (max-width: 768px) {
-            .layout-container {
-                flex-direction: column;
-                align-items: center;
-            }
-    
-            nav ul {
-                flex-wrap: wrap;
-            }
-    
-            header h1 {
-                font-size: 2rem;
-            }
-    
-            header p {
-                font-size: 1rem;
-            }
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            background-color: #fff;
-        }
-        
-        th, td {
-            border: 1px solid #050050;
-            text-align: left;
-            padding: 10px;
-        }
-        
-        th {
-            background-color: #0078ff;
-            color: white;
-            font-weight: bold;
-        }
-        
-</style>
 <body>
 
     <header>
         <div class="hero">
             <h1>Selamat Datang di Sekolah Kelompok 2</h1>
-            <p>Menciptakan Generasi Yang Tidak Berkahir Menjadi Koruptor</p>
+            <p>Menciptakan Generasi Yang Tidak Berakhir Menjadi Polisi</p>
             <a href="#kontak" class="btn">Hubungi Kami</a>
         </div>
     </header>
 
     <nav>
         <ul>
-            <li><a href="#beranda">Beranda</a></li>
-            <li><a href="#profil">Profil</a></li>
-            <li><a href="#akademik">Akademik</a></li>
-            <li><a href="#galeri">Galeri</a></li>
+            <li><a href="sekolah.html">Beranda</a></li>
+            <li><a href="visimisi.html">Visi dan Misi</a></li>
+            <li><a href="fasilitas.html">Fasilitas</a></li>
             <li><a href="#kontak">Kontak</a></li>
+            <li><a href="form.html">Pendaftaran</a></li>
         </ul>
     </nav>
 
@@ -265,7 +37,6 @@
                 <div>
                 <h3>Penerimaan Siswa Baru</h3>
                 <p>Segera daftarkan putra-putri Anda di Sekolah Kelompok 2 untuk tahun ajaran 2024/2030. Informasi lebih lanjut dapat diperoleh di bagian akademik.</p>
-                <a href="#akademik" class="btn">Lihat Detail</a>
             </div>
             <div>
                 <h3>Penghargaan Sekolah</h3>
@@ -274,13 +45,47 @@
         </div>
         </section>
 
-        <section id="profil">
-            <h2>Profil Sekolah</h2>
-            <div class="content">
-                <p>Sekolah Kelompok 2 adalah lembaga pendidikan yang berdiri sejak tahun 1945. Kami berkomitmen memberikan pendidikan terbaik dengan fasilitas modern dan kurikulum berbasis teknologi.</p>
-                <img src="" alt="Foto Sekolah">
-            </div>
-        </section>
+            <section id="profil">
+                <h2>Profil Sekolah</h2>
+                <div class="content">
+                    <p>Sekolah Kelompok 2 adalah lembaga pendidikan yang berdiri sejak tahun 1945. Kami berkomitmen memberikan pendidikan terbaik dengan fasilitas modern dan kurikulum berbasis teknologi.</p>
+                    <img src="https://www.bsi.ac.id/berkas/banner-256.jpg" alt="Foto Sekolah">
+                </div>
+            </section>
+
+            <section id="informasi-sekolah">
+                <h2>Informasi Sekolah</h2>
+                <div class="info-container">
+                    <div class="info-left">
+                        <h3>Data Sekolah</h3>
+                        <ul>
+                            <li><strong>Guru:</strong> 82</li>
+                            <li><strong>Siswa Laki-laki:</strong> 339</li>
+                            <li><strong>Siswa Perempuan:</strong> 979</li>
+                            <li><strong>Rombongan Belajar:</strong> 39</li>
+                        </ul>
+                    </div>
+                    <div class="info-footer">
+                        <h3>Fasilitas Tambahan</h3>
+                        <ul>
+                            <li><strong>Akses Internet:</strong> Tidak Ada</li>
+                            <li><strong>Sumber Listrik:</strong> PLN</li>
+                            <li><strong>Daya Listrik:</strong> 6,500</li>
+                            <li><strong>Luas Tanah:</strong> 0 M²</li>
+                        </ul>
+                    </div>
+                    <div class="info-extra">
+                        <h3>Info Ekstra</h3>
+                        <ul>
+                            <li><strong>Ruang Kelas:</strong> 35</li>
+                            <li><strong>Laboratorium:</strong> 4</li>
+                            <li><strong>Perpustakaan:</strong> 1</li>
+                            <li><strong>Sanitasi Siswa:</strong> 2</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
 
         <section id="akademik">
             <h2>Informasi Akademik</h2>
@@ -317,7 +122,7 @@
         
 
         <section id="galeri">
-            <h2>Galeri Sekolah</h2>
+            <h2>Cabang Kami</h2>
             <div class="gallery">
                 <figure class="gallery-item">
                     <img src="https://www.bsi.ac.id/ubsi/assets/kampusutama/bsirektor.png" alt="Foto Cabang 1">
@@ -375,16 +180,29 @@
                     <h3>Informasi Tambahan</h3>
                     <p>Alamat: Jl. Kramat Raya No.98, Jakarta Pusat</p>
                     <p>Email: info@kelompok2.ac.id</p>
-                    <p>Telepon: 0855-9193-6233</p>
+                    <p>
+                        <style>
+                            .warna-link {
+                              color: blue;
+                            }
+                            </style> Telepon: 
+                        <a href="https://wa.me/qr/24RKCGHY57EZC1" class="warna-link">0855-9193-6233</a>
+                    </p>
                 </div>
             </div>
         </section>
         
     </main>
-
     <footer>
         <p>&copy; 2024 Sekolah Kelompok 2. Semua Hak Dilindungi.</p>
+        <div class="social-media">
+            <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/@nisahamada_" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/syfdnrml_" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/@Cipcips37" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
     </footer>
 
 </body>
 </html>
+ 
