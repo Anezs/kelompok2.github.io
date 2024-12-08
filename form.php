@@ -79,7 +79,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <div class="button-container">
             <a href="form.html" class="btn">Perbaiki</a>
-            <a href="sekolah.html" class="btn btn-back">Beranda</a>
+            <a href="index.html" class="btn btn-back">Beranda</a>
         </div>
     </main>
     <footer>
